@@ -1,0 +1,158 @@
+.datetime-picker-input {
+    cursor: pointer;
+  }
+  .datetime-picker {
+    position: absolute;
+    z-index: 1000;
+  }
+  .datetime-picker .datetime-picker-container {
+    color: #404040;
+    min-width: 15em;
+    background: #fff;
+    padding: 4px;
+    border: 1px solid #f0f3f4;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: -0.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075);
+  }
+  .datetime-picker .datetime-picker-container:before,
+  .datetime-picker .datetime-picker-container:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: none;
+    position: absolute;
+    top: -9px;
+    left: 15px;
+  }
+  .datetime-picker .datetime-picker-container:before {
+    border-bottom-color: #f0f3f4;
+    border-width: 9px;
+  }
+  .datetime-picker .datetime-picker-container:after {
+    border-bottom-color: #fff;
+    margin-top: 1px;
+    margin-left: 1px;
+  }
+  .datetime-picker.inline {
+    display: block;
+    position: relative;
+  }
+  .datetime-picker.inline .datetime-picker-container {
+    position: relative;
+    margin: 0;
+  }
+  .datetime-picker.inline .datetime-picker-container:before,
+  .datetime-picker.inline .datetime-picker-container:after {
+    content: none;
+  }
+  .datetime-picker.top .datetime-picker-container {
+    bottom: 100%;
+    margin-top: auto;
+    margin-bottom: 4px;
+  }
+  .datetime-picker.top .datetime-picker-container:before,
+  .datetime-picker.top .datetime-picker-container:after {
+    border: 8px solid transparent;
+    border-bottom: none;
+    top: auto;
+    bottom: -9px;
+  }
+  .datetime-picker.top .datetime-picker-container:before {
+    border-top-color: #f0f3f4;
+    border-width: 9px;
+  }
+  .datetime-picker.top .datetime-picker-container:after {
+    border-top-color: #fff;
+    margin-top: auto;
+    margin-bottom: 1px;
+  }
+  .datetime-picker.right .datetime-picker-container {
+    right: 0;
+    margin-left: auto;
+    margin-right: -0.5em;
+  }
+  .datetime-picker.right .datetime-picker-container:before,
+  .datetime-picker.right .datetime-picker-container:after {
+    left: auto;
+    right: 15px;
+  }
+  .datetime-picker.right .datetime-picker-container:after {
+    margin-left: auto;
+    margin-right: 1px;
+  }
+  .datetime-picker table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    min-width: 100%;
+    table-layout: fixed;
+  }
+  .datetime-picker th {
+    font-weight: bold;
+  }
+  .datetime-picker th:first-child,
+  .datetime-picker th:last-child {
+    width: 2em;
+  }
+  .datetime-picker th,
+  .datetime-picker td {
+    padding: 0;
+    text-align: center;
+    min-width: 2em;
+    height: 2em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .datetime-picker th:hover,
+  .datetime-picker td:hover {
+    background-color: #fafbfb;
+    background-image: linear-gradient(#f0f3f4, #fafbfb);
+  }
+  .datetime-picker th.disabled,
+  .datetime-picker td.disabled,
+  .datetime-picker th.disabled:hover,
+  .datetime-picker td.disabled:hover {
+    color: #abbbc7;
+    background: none;
+    cursor: default;
+    visibility: hidden;
+  }
+  .datetime-picker td.today {
+    background: #e4eef5;
+    color: #404040;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  }
+  .datetime-picker td.selected {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    border-color: #3ca0dd;
+    background-color: #45b1e8;
+    background-image: linear-gradient(#45b1e8, #3097de);
+  }
+  .datetime-picker td.highlighted {
+    background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.15));
+  }
+  .datetime-picker .decade-view td,
+  .datetime-picker .year-view td {
+    height: 3.4em;
+  }
+  .datetime-picker .month-view .datetime-picker-specific-views th {
+    background: none;
+    cursor: default;
+  }
+  .datetime-picker .month-view td {
+    width: 1.4285714286em;
+  }
+  .datetime-picker .day-view td,
+  .datetime-picker .hour-view td {
+    height: 2.3333333333em;
+  }
+  .datetime-picker .minute-view td {
+    height: 1.8em;
+  }
+  
